@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:alpha="20"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="304dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sp_img_time" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:text="不要被其他事情分心，点击按钮返回TimeControl"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18sp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="返回TimeControl"
+        android:textAllCaps="false"
+        android:background="@drawable/shape_buttom_common"/>
+</RelativeLayout>

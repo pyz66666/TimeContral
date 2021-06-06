@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_main_gradient"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:visibility="gone"
+            android:text="计时"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/text_size_18sp"
+            android:text="开启专注模式"/>
+
+        <com.nightonke.jellytogglebutton.JellyToggleButton
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_btn"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:jtbJelly="lazy_tremble_head_slim_jim"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.gcssloop.widget.ArcSeekBar
+            android:id="@+id/arc_seek_bar"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:arc_colors="@array/arc_colors_default"
+            app:arc_max="100"
+            app:arc_min="0"
+            app:arc_progress="50"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="400px"
+            android:gravity="center"
+            android:text="Timer"
+            android:textSize="30sp"
+            android:id="@+id/timer"
+            android:textColor="@color/yellow"
+            />
+
+    </RelativeLayout>
+
+    <cn.iwgang.countdownview.CountdownView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        app:isShowHour="true"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:timeTextSize="28sp"
+        app:suffixTextColor="@color/white"
+        android:id="@+id/time_countdownView"
+        />
+
+
+    <Button
+        android:id="@+id/time_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        android:textColor="@color/white"
+        android:background="@color/pyzusegreen"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/time_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:background="@color/pyzusegreen"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+        android:id="@+id/title_toolbar"
+        android:layout_width="match_parent"
+        titlebar:centerTextColor="@color/white"
+        titlebar:centerTextSize="16sp"
+        titlebar:fillStatusBar="true"
+        titlebar:statusBarColor="@color/lightskyblue"
+        titlebar:centerType="textView"
+        titlebar:centerText="新增"
+        titlebar:titleBarColor="@color/lightskyblue"
+        titlebar:leftType="imageButton"
+        titlebar:showBottomLine="false"
+        titlebar:rightType="textView"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="App图标"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18sp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/app_details_icon"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightskyblue"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="App包名"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_18sp"
+            android:textColor="@color/black"
+            android:id="@+id/app_package_name"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightskyblue"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="App名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_18sp"
+            android:textColor="@color/black"
+            android:id="@+id/app_name"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightskyblue"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="App路径"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_18sp"
+            android:textColor="@color/black"
+            android:id="@+id/app_route"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightskyblue"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+
+</LinearLayout>

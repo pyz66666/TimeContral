@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="EditScreenTextInputLayoutStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/lightskyblue</item>
+        <item name="colorControlActivated">@color/lightskyblue</item>
+        <item name="colorControlHighlight">@color/lightskyblue</item>
+        <item name="colorAccent">@color/textInputLayout</item>
+        <item name="android:textColorHint">@color/lightskyblue</item>
+    </style>
+
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_17sp">17sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_19sp">19sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_21sp">21sp</dimen>
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="text_size_23sp">23sp</dimen>
+
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+    <style name="OnePxActivityStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 窗体背景颜色为透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 窗体没有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 窗体不包含标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 窗体悬浮 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 自定义TitleBar时去掉多余的阴影-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 不允许窗体背景变暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 窗体切换无动画-->
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- 禁用窗口的预览动画-->
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoDisplay">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

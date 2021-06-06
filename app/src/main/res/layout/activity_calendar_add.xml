@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".mvp.ui.activity.CalendarAddActivity">
+
+    <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+        android:id="@+id/title_toolbar"
+        android:layout_width="match_parent"
+        titlebar:centerTextColor="@color/white"
+        titlebar:centerTextSize="16sp"
+        titlebar:fillStatusBar="true"
+        titlebar:statusBarColor="@color/lightskyblue"
+        titlebar:centerType="textView"
+        titlebar:centerText="新增"
+        titlebar:titleBarColor="@color/lightskyblue"
+        titlebar:rightImageResource="@mipmap/yes"
+        titlebar:leftType="imageButton"
+        titlebar:showBottomLine="false"
+        titlebar:rightType="imageButton"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/calendar_add_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:background="#fff"
+        android:paddingTop="20dp"
+        android:text="创建日程"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日程"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/text_size_18sp"
+                />
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lightskyblue"
+                android:visibility="visible"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:hint="请输入事件标题"
+            android:id="@+id/calendar_title"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:background="@drawable/edit_select"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18sp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_18sp"
+                android:textColor="@color/black"
+                android:text="开始时间"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_18sp"
+                android:textColor="@color/black"
+                android:gravity="right"
+                android:id="@+id/start_time"
+                android:drawableRight="@drawable/right"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_18sp"
+                android:textColor="@color/black"
+                android:text="结束时间"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_18sp"
+                android:textColor="@color/black"
+                android:gravity="right"
+                android:id="@+id/end_time"
+                android:drawableRight="@drawable/right"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/lightskyblue"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_18sp"
+                android:textColor="@color/black"
+                android:text="重要事件"/>
+            <com.nightonke.jellytogglebutton.JellyToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/clock_btn"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:jtbJelly="lazy_tremble_head_slim_jim"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/lightskyblue"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="请输入事件地点"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:background="@drawable/edit_select"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18sp"
+            android:id="@+id/calendar_place"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="请输入备注"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:background="@drawable/edit_select"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18sp"
+            android:id="@+id/calendar_remark"
+            />
+    </LinearLayout>
+
+</LinearLayout>
